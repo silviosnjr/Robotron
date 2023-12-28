@@ -1,11 +1,19 @@
-    const roboYellow = document.querySelector("#roboYellow");
-    roboYellow.addEventListener("click", () => {
-        console.log("cliquei no robô");
-    });
+const substrair = document.querySelector("#subtrair");
+const somar = document.querySelector("#somar");
+const braco = document.querySelector("#braco");
 
-    function digaOi(nome){
-        console.log("oi "+nome);
-        console.log("Bem vindo a oficina de RoboTron");
+const controle = document.querySelectorAll(".controle-ajuste");
+
+controle.forEach( (elemento)=>{
+    elemento.addEventListener('click', (evento)=>{
+        manipulaDados(evento.target.textContent)
+    })
+})
+
+function manipulaDados(operacao){
+    if(operacao === "-"){
+        braco.value = parseInt(braco.value) - 1;
+    } else{
+        braco.value = parseInt(braco.value) + 1;
     }
-
-    digaOi("Silvio");
+}
