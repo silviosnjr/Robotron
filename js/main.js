@@ -3,9 +3,9 @@
         console.log("cliquei no robô");
     });
 
-    function digaOi(){
-        console.log("oi");
+    function digaOi(nome){
+        console.log("oi "+nome);
         console.log("Bem vindo a oficina de RoboTron");
     }
 
-    digaOi();
+    digaOi("Silvio");
