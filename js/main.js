@@ -1,5 +1,5 @@
     const roboYellow = document.querySelector("#roboYellow");
-    roboYellow.addEventListener("click", function(){
+    roboYellow.addEventListener("click", () => {
         console.log("cliquei no robô");
     });
 
